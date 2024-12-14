@@ -1,0 +1,98 @@
+body {
+background-color: #000000;
+margin:0; 
+/*color:beige; */
+overflow: hidden;
+}
+
+canvas {
+
+width: 100;
+height: 100;
+position: absolute;
+top:0;
+left:0; 
+z-index: 1;
+}
+/*
+CSS RESETS:
+ Border box reset:
+https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ 62.5% Fix: https: //www.aleksandrhovhannisyan.com/blog/62-5-percent-font-size-trick/
+*/
+
+
+
+html {
+    box-sizing: border-box;
+    font-size: 82.5%;
+ }
+ 
+ 
+ *,
+ *:before,
+ *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+ }
+ 
+ 
+ html,
+ body {
+    height: 100%;
+ }
+ 
+ 
+ body {
+     font-size: 2.9rem;
+    /* font-size 1.6rem is now the same as 16px */
+    line-height: 1.6;
+ }
+ 
+ header { 
+    padding: 99px; 
+    background-color: rgb(15, 4, 4); 
+    text-align:center;
+    
+ }
+ main {max-width: 16px;
+margin: 9px auto; 
+}
+p {
+    margin-top: 20px;
+}
+body {
+    color: rgb(254, 254, 254);
+  }
+  
+  h1 {
+    color: rgb(254, 255, 254);
+  }
+  span {
+width: 50%; 
+height: 50px; 
+position: absolute;
+pointer-events: none;
+border-radius: 50%;
+background: rgb(205, 54, 54);
+box-shadow:20px,20px,60px  rgb(220, 9, 9),
+-20px,-20px,60px rgb(177, 45, 45);
+transform: translate (-50%, -50%);
+animation: animate 4s linear infinite ;
+
+
+  }
+
+  @keyframes animate {
+    0% {
+        transform: translate(-50%, 50%);
+        opacity: 1;  
+        filter: hue-rotate(0deg);
+    }
+    100% { 
+        transform: translate(-50%, -1000%);
+        opacity: 1;
+        filter: hue-rotate(960deg);
+    }
+}
